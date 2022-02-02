@@ -1,0 +1,22 @@
+{
+  "name": "pagina-web-moderna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beacl3320/pagina-web-moderna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beacl3320/pagina-web-moderna/issues"
+  },
+  "homepage": "https://github.com/beacl3320/pagina-web-moderna#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}
