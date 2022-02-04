@@ -1,0 +1,29 @@
+@use 'color';
+
+.about{
+    background: url(/assets/images/patron1.jpeg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    & .servicios{
+        display: flex;
+        justify-content: space-between;
+        color: color.$one-color;
+        margin: auto;
+        flex-wrap: wrap;
+
+        & .caja-servicios{
+            width: 30%;
+
+            & .icon-servicios{
+                width: 120px;
+            }
+
+            & h4{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
