@@ -16,18 +16,6 @@ header{
         box-shadow: 0 0 10px rgba(0, 0, 0, .5);
         color: white;
 
-        & .nav1{
-            background: transparent;
-            height: 80px;
-            color: color.$seven-color;
-        }
-
-        & .nav2{
-            background: color.$four-color;
-            height: 100px;
-            color: color.$eight-color;
-        }
-
         & .container-nav{
             display: flex;
             justify-content: space-between;
@@ -43,8 +31,8 @@ header{
                 display: inline-block;
                 padding: 5px 0;
                 margin-right: 17px;
-                font-size: 17px;
-                font-weight: 300;
+                font-size: 18px;
+                font-weight: 400;
                 text-decoration: none;
                 border-bottom: 3px solid transparent;
                 color: inherit;
@@ -59,9 +47,21 @@ header{
                 display: none;
                 font-size: 24px;
                 padding: 23.5px 20px;
-
             }
         }
+    }
+
+    & .nav1{
+        background: transparent;
+        height: 80px;
+        color: color.$seven-color;
+    }
+
+    & .nav2{
+        background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+        height: 100px;
+        color: color.$six-color;
+        font-size: 50px;
     }
 
     & .textos{
@@ -82,6 +82,50 @@ header{
         & h2{
             font-size: 30px;
             font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        & nav{
+            & .container-nav{
+
+                & .icono{
+                    display: block;
+                    cursor: pointer;
+                }
+                & .enlaces{
+                    position: fixed;
+                    top: 80px;
+                    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+                    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+                    left: 0;
+                    height: 93%;
+                    transition: 1s;
+                    width: 0;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    & a{
+                        display: block;
+                        width: 100%;
+                        /* height: 50px; */
+                        padding: 20px;
+                        text-align: center;
+                        /* background: color.$nine-color; */
+                        color: color.$two-color;
+                    }
+                }
+            }
+        }
+        & .nav2{
+            color: white;
         }
     }
 }
