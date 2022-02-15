@@ -48,7 +48,7 @@ let cerrado = true;
 
 function apertura(){
     if(cerrado){
-        menu.style.width = '40vh';
+        menu.style.width = '25vh';
         cerrado = false;
     }else{
         menu.style.width = '0%';

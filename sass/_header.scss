@@ -139,5 +139,18 @@ header{
     }
 }
 
+@media (max-width: 500px){
+
+    header{
+        & nav{
+            & .container-nav{
+                & .enlaces{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
 
 
