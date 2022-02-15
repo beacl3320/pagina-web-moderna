@@ -127,6 +127,15 @@ header{
         & .nav2{
             color: white;
         }
+
+        & .textos{
+            & h1{
+                font-size: 70px;
+            }
+            & h2{
+                font-size: 35px;
+            }
+        }
     }
 }
 

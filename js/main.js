@@ -17,7 +17,11 @@ function menus() {
     }
 }
 
-window.addEventListener('load', menus);
+window.addEventListener('load', function() {
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+    menus();
+});
 
 window.addEventListener('click', function(e) { /* función para que se cierre el menu clicando en cualquier parte de la página */
     console.log(e.target);

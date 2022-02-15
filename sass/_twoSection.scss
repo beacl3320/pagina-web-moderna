@@ -27,3 +27,14 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    .about{
+        & .servicios{
+            & .caja-servicios{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
