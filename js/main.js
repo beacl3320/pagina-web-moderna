@@ -18,6 +18,19 @@ function menus() {
 }
 
 window.addEventListener('load', menus);
+
+window.addEventListener('click', function(e) { /* función para que se cierre el menu clicando en cualquier parte de la página */
+    console.log(e.target);
+    if(cerrado == false) {
+        let span = document.querySelector('span');
+        if(e.target !== span && e.target !== abrir){
+            menu.style.width = '0%';
+            menu.style.overflow = 'hidden';
+            cerrado = true;
+        }
+    }
+})
+
 window.addEventListener('scroll', function() {
     console.log(this.window.pageYOffset);
     menus();
